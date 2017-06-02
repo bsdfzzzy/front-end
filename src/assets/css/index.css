@@ -1,0 +1,181 @@
+@media screen and (min-width:1200px) {
+  #page {
+    width: 1120px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  #page {
+    width: 900px;
+  }
+}
+
+.head_top {
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  height: 100px;
+  background-color: #fff;
+}
+
+.bar .mat-toolbar-layout .mat-toolbar-row {
+  height: 100px;
+}
+
+.bar .mat-toolbar-layout .mat-toolbar-row .container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bar .container .containerfix {
+  margin: 0;
+  padding: 0;
+}
+
+.bar .container .containerfix .logo {
+  float: left;
+  align-items: center;
+}
+
+.bar .container .containerfix .select-form {
+  float: right;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.mat-toolbar {
+  font-size: 14px !important;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+.main .navbar {
+  min-height: 45px !important;
+}
+
+.main .navbar .mat-toolbar-layout .mat-toolbar-row {
+  height: 45px;
+}
+
+.main .navbar .mat-toolbar-layout .mat-toolbar-row .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .navbar .mat-toolbar-layout .mat-toolbar-row .container ul {
+  width: 1120px;
+  margin-left: -2%;
+  list-style: none;
+  height: 45px;
+}
+
+.main .navbar .mat-toolbar-layout .mat-toolbar-row .container ul li {
+  text-align: center;
+  width: 11.1%;
+  float: left;
+  height: 45px;
+}
+
+.main .navbar .mat-toolbar-layout .mat-toolbar-row .container ul li {
+  height: 45px;
+}
+
+.main .navbar .mat-toolbar-layout .mat-toolbar-row .container ul li a {
+  height: 45px;
+  display: block;
+}
+
+.main .navbar .mat-toolbar-layout .mat-toolbar-row .container ul li a span {
+  line-height: 45px;
+  height: 45px;
+}
+
+.active {
+  background-color: #d0d0d0;
+}
+
+.footer {
+  height: 300px;
+}
+
+.footer .footbar1 {
+  border-top: 1px solid #ddd;
+  height: 45px;
+}
+
+.footer .footbar1 .mat-toolbar-layout .mat-toolbar-row {
+  height: 45px;
+}
+
+.footer .footbar1 .mat-toolbar-layout .mat-toolbar-row .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer .footbar1 .mat-toolbar-layout .mat-toolbar-row .container div {
+  width: 1120px;
+}
+
+.footer .footbar1 .mat-toolbar-layout .mat-toolbar-row .container .fhead {
+  height: 45px;
+  font-size: 18px;
+  color: #5c5d5d;
+}
+
+.footer .footbar1 .mat-toolbar-layout .mat-toolbar-row .container .fhead ul li {
+  width: 95px;
+  height: 45px;
+  list-style: none;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin-top: -1.6%;
+  margin-left: -4%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.footer .footbar2 {
+  border-top: 1px solid #ddd;
+  height: 200px;
+}
+
+.footer .footbar2 .mat-toolbar-layout .mat-toolbar-row .container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  margin-top: 10.5%;
+}
+
+.footer .footbar2 .mat-toolbar-layout .mat-toolbar-row .container div {
+  width: 1120px;
+}
+
+.footer .footbar2 .mat-toolbar-layout .mat-toolbar-row .container .fmain {
+  height: 200px;
+  font-size: 18px;
+  color: #5c5d5d;
+}
+
+.footer .footbar2 .mat-toolbar-layout .mat-toolbar-row .container .fmain ul li {
+  list-style: none;
+}
+
+.footer .footbar3 {
+  border-top: 1px solid #ddd;
+}
+
+.footer .footbar3 .mat-toolbar-layout .mat-toolbar-row .container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+}
+
+.footer .footbar3 .mat-toolbar-layout .mat-toolbar-row .container .ffoot p {
+  text-align: center;
+}

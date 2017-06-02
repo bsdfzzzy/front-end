@@ -1,25 +1,66 @@
-<md-content>
-  <md-toolbar class="md-hue-2">
-    <img src="" alt="" />
-    <p>环宇教育</p>
-  </md-toolbar>
-</md-content>
-<!--
-<md-toolbar class="md-hue-2">
-      <div class="md-toolbar-tools">
-        <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
-          <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-        </md-button>
-
-        <h2 flex md-truncate>环宇教育</h2>
-
-        <md-button class="md-icon-button" aria-label="Favorite">
-          <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button" aria-label="More">
-          <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
-        </md-button>
+<div class="head_top">
+  <md-toolbar class="bar">
+    <div class="container">
+      <div class="containerfix">
+        <img src="" alt="" />
+        <p class="logo">环宇教育</p>
+        <form #form="ngForm" (ngSubmit)="doSelect(form)" class="select-form">
+          <md-input-container>
+            <input mdInput placeholder="请输入搜索内容" name="selectkey" ngModel #selectkey="ngModel" type="text" />
+            <button md-button type="submit">提交</button>
+          </md-input-container>
+        </form>
       </div>
-    </md-toolbar>-->
+    </div>
+  </md-toolbar>
+</div>
+<div class="main">
+  <md-toolbar class="navbar">
+    <div class="container">
+      <ul>
+        <li><a md-button routerLinkActive="active" routerLink="home">首页</a></li>
+        <li><a md-button routerLinkActive="active" routerLink="about">关于我们</a></li>
+        <li><a md-button routerLinkActive="active" routerLink="study-abroad">美国留学</a></li>
+        <li><a md-button routerLinkActive="active" routerLink="ranking">院校排名</a></li>
+        <li><a md-button routerLinkActive="active" routerLink="train">语言培训</a></li>
+        <li><a md-button routerLinkActive="active" routerLink="study-in-china">Study in China</a></li>
+        <li><a md-button routerLinkActive="active" routerLink="advertise">人才招聘</a></li>
+        <li><a md-button routerLinkActive="active" routerLink="cooperation">商务合作</a></li>
+        <li><a md-button routerLinkActive="active" routerLink="contact">联系我们</a></li>
+      </ul>
+    </div>
+  </md-toolbar>
+</div>
 <router-outlet></router-outlet>
+
+<div class="footer">
+  <div  class="footbar1">
+    <md-toolbar>
+    <div class="container">
+      <div class="fhead">
+        <ul>
+          <li>友情链接</li>
+        </ul>
+      </div>
+    </div>
+  </md-toolbar>
+  </div>
+  
+  <md-toolbar class="footbar2">
+    <div class="container">
+      <div class="fmain">
+        <ul>
+          <li>11111</li>
+          <li>22222</li>
+        </ul>
+      </div>
+    </div>
+  </md-toolbar>
+  <md-toolbar class="footbar3">
+    <div class="container">
+      <div class="ffoot">
+        <p>Copyright © 2010-2015  *****</p>
+      </div>
+    </div>
+  </md-toolbar>
+</div>
