@@ -1,17 +1,17 @@
-import { homeRoutes } from './home.routes';
+import { rankingRoutes } from './ranking.routes';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from "./home.component";
+import { RankingComponent } from "./ranking.component";
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    RouterModule.forChild(homeRoutes)
+    RouterModule.forChild(rankingRoutes),
   ],
   declarations: [
-    HomeComponent
+    RankingComponent
   ]
 })
-export class HomeModule { }
+export class RankingModule { }

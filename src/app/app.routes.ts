@@ -13,6 +13,10 @@ export const appRoutes=[
         loadChildren:'./home/home.module#HomeModule'
     },
     {
+        path:'about',
+        loadChildren:'./about/about.module#AboutModule'
+    },
+    {
 		path:'**',//fallback router must in the last
 		loadChildren:'./app.module#AppModule'
     }

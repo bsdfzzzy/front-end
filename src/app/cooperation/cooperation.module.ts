@@ -1,17 +1,17 @@
-import { homeRoutes } from './home.routes';
+import { cooperationRoutes } from './cooperation.routes';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from "./home.component";
+import { CooperationComponent } from "./cooperation.component";
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    RouterModule.forChild(homeRoutes)
+    RouterModule.forChild(cooperationRoutes),
   ],
   declarations: [
-    HomeComponent
+    CooperationComponent
   ]
 })
-export class HomeModule { }
+export class CooperationModule { }

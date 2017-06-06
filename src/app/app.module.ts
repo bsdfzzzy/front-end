@@ -1,16 +1,22 @@
+import { ButtonsModule } from 'ngx-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
-import { MaterialModule, MdNativeDateModule, MdToolbarModule } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { appRoutes } from "./app.routes";
 import { HomeModule } from "./home/home.module";
-
-import 'hammerjs';
+import { studyAbroadModule } from "./studyAbroad/studyAbroad.module";
+import { AboutModule } from "./about/about.module";
+import { RankingModule } from "./ranking/ranking.module";
+import { TrainModule } from "./train/train.module";
+import { StudyInChinaModule } from "./studyInChina/studyInChina.module";
+import { AdvertiseModule } from "./advertise/advertise.module";
+import { CooperationModule } from "./cooperation/cooperation.module";
+import { ContactModule } from "./contact/contact.module";
 
 @NgModule({
   declarations: [
@@ -24,10 +30,16 @@ import 'hammerjs';
     RouterModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    MaterialModule,
-    MdNativeDateModule,
+    ButtonsModule.forRoot(),
     HomeModule,
-    MdToolbarModule
+    AboutModule,
+    studyAbroadModule,
+    RankingModule,
+    TrainModule,
+    StudyInChinaModule,
+    AdvertiseModule,
+    CooperationModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,87 +1,92 @@
-<<<<<<< HEAD
-<div class="head_top">
-  <md-toolbar class="bar">
-    <div class="container">
-      <div class="containerfix">
-        <img src="" alt="" />
-        <p class="logo">环宇教育</p>
-        <form #form="ngForm" (ngSubmit)="doSelect(form)" class="select-form">
-          <md-input-container>
-            <input mdInput placeholder="请输入搜索内容" name="selectkey" ngModel #selectkey="ngModel" type="text" />
-            <button md-button type="submit">提交</button>
-          </md-input-container>
-        </form>
-      </div>
+<!--head top-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-md-offset-1 logo">
+      <img src="assets/img/title.png" alt="环宇教育" />
+      <!--<p class="logo">环宇教育</p>-->
     </div>
-  </md-toolbar>
+    <div class="col-md-3 col-md-offset-4 searchform">
+      <form #form="ngForm" (ngSubmit)="doSelect(form)">
+        <div>
+          <input class="form-control" style="width:90%;display: inline-block;" placeholder="请输入搜索内容" name="selectkey" ngModel #selectkey="ngModel" type="text" />
+          <button type="submit" class="btnform">提交</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
 </div>
-<div class="main">
-  <md-toolbar class="navbar">
-    <div class="container">
+<!--nav bar-->
+<div class="nav">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
       <ul>
-        <li><a md-button routerLinkActive="active" routerLink="home">首页</a></li>
-        <li><a md-button routerLinkActive="active" routerLink="about">关于我们</a></li>
-        <li><a md-button routerLinkActive="active" routerLink="study-abroad">美国留学</a></li>
-        <li><a md-button routerLinkActive="active" routerLink="ranking">院校排名</a></li>
-        <li><a md-button routerLinkActive="active" routerLink="train">语言培训</a></li>
-        <li><a md-button routerLinkActive="active" routerLink="study-in-china">Study in China</a></li>
-        <li><a md-button routerLinkActive="active" routerLink="advertise">人才招聘</a></li>
-        <li><a md-button routerLinkActive="active" routerLink="cooperation">商务合作</a></li>
-        <li><a md-button routerLinkActive="active" routerLink="contact">联系我们</a></li>
+        <li><a routerLinkActive="active" routerLink="home">首页</a></li>
+        <li><a routerLinkActive="active" routerLink="about">关于我们</a></li>
+        <li><a routerLinkActive="active" routerLink="studyAbroad">美国留学</a></li>
+        <li><a routerLinkActive="active" routerLink="ranking">院校排名</a></li>
+        <li><a routerLinkActive="active" routerLink="train">语言培训</a></li>
+        <li><a routerLinkActive="active" routerLink="studyInChina">Study in China</a></li>
+        <li><a routerLinkActive="active" routerLink="advertise">人才招聘</a></li>
+        <li><a routerLinkActive="active" routerLink="cooperation">商务合作</a></li>
+        <li><a routerLinkActive="active" routerLink="contact">联系我们</a></li>
       </ul>
     </div>
-  </md-toolbar>
-</div>
-<router-outlet></router-outlet>
-=======
-
-  <md-toolbar class="md-hue-2">
-    <img src="" alt="" />
-    <p>环宇教育</p>
-  </md-toolbar>
-
-<!--
-<md-toolbar class="md-hue-2">
-      <div class="md-toolbar-tools">
-        <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
-          <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-        </md-button>
-
-        <h2 flex md-truncate>环宇教育</h2>
-
-        <md-button class="md-icon-button" aria-label="Favorite">
-          <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
-        </md-button>
->>>>>>> d88bd661499fad75fad2b910788949aca0ebddc7
-
-<div class="footer">
-  <div  class="footbar1">
-    <md-toolbar>
-    <div class="container">
-      <div class="fhead">
-        <ul>
-          <li>友情链接</li>
-        </ul>
-      </div>
-    </div>
-  </md-toolbar>
+    <div class="col-md-1"></div>
   </div>
-  
-  <md-toolbar class="footbar2">
-    <div class="container">
-      <div class="fmain">
+</div>
+<!--main-->
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
+<!--footer-->
+<div class="footer">
+  <div class="footbar">
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+          <ul>
+            <li>友情链接</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footmain">
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
         <ul>
-          <li>11111</li>
-          <li>22222</li>
+          <li>1111</li>
+          <li>2222</li>
         </ul>
       </div>
     </div>
-  </md-toolbar>
-  <md-toolbar class="footbar3">
-    <div class="container">
-      <div class="ffoot">
-        <p>Copyright © 2010-2015  *****</p>
+  </div>
+  <div class="footfoot">
+    <div class="row">
+      <div class="col-md-12">
+        <p>Copyright © 2010-2015 *****</p>
       </div>
     </div>
-  </md-toolbar>
+  </div>
+</div>
+<!--cbwindow-->
+<div class="cg-flwindow">
+  <div class="cm-flwindow">
+    <ul class="cm-windowlist">
+      <li class="box01"><a class="a2" href="#">快速导航</a></li>
+      <li class="box02">
+        <a class="a1 a2" href="#">手机访问</a>
+        <div class="cm-phopen f-none" style="display: none;">
+          <a href="#"><img class="f-imgresponsive" src="./images/ms1-main-icon38.jpg" alt="" width="119" height="118"></a>
+          <p class="f-tac">扫一扫</p>
+          <p class="p1">
+            或在手机浏览器输入
+            <a href="#" class="cu-color4">mshw.net</a>
+          </p>
+        </div>
+      </li>
+      <li class="box03">
+        <a class="a2" href="javascript:;"></a>
+      </li>
+    </ul>
+  </div>
 </div>
