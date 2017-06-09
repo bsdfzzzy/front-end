@@ -36,6 +36,9 @@
   outline: none;
   background-color: Transparent;
 }
+.btnform img {
+  height: 20px !important;
+}
 
 
 /****  nav bar   ****/
@@ -56,7 +59,8 @@
 .nav .row div ul li {
   float: left;
   font-size: 18px;
-  width: 11%;
+  /*width: 11%;*/
+  width: 123px;
   height: 45px;
   text-align: center;
 }
@@ -99,7 +103,8 @@
 
 .footer .footbar .row div ul li:first-child {
   height: 38px;
-  width: 9%;
+  /*width: 9%;*/
+  width: 112px;
   text-align: center;
   line-height: 38px;
   font-size: 18px;

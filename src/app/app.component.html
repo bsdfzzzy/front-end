@@ -8,8 +8,9 @@
     <div class="col-md-3 col-md-offset-4 searchform">
       <form #form="ngForm" (ngSubmit)="doSelect(form)">
         <div>
-          <input class="form-control" style="width:90%;display: inline-block;" placeholder="请输入搜索内容" name="selectkey" ngModel #selectkey="ngModel" type="text" />
-          <button type="submit" class="btnform">提交</button>
+          <input class="form-control" style="width:90%;display: inline-block;padding: 6px 40px 6px 12px;" 
+          placeholder="请输入搜索内容" name="swords" ngModel #swords="ngModel" type="text" />
+          <button type="submit" class="btnform"><img src="assets/ico/glyphicons/png/glyphicons-28-search.png"></button>
         </div>
       </form>
     </div>
@@ -35,6 +36,7 @@
     <div class="col-md-1"></div>
   </div>
 </div>
+
 <!--main-->
 <div class="main">
   <router-outlet></router-outlet>

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 
@@ -7,15 +8,26 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public selectkey:string = '';
-
-  constructor(){}
-
+  public swords:string;
+  public selectwords: string = '';
+  
+  constructor(
+    public router:Router
+  ){
+    
+  }
   ngOnInit(){
 
   }
+  
   public doSelect(form:NgForm){
-    this.selectkey = form.value.selectkey;
-    console.log(this.selectkey);
+    this.selectwords = form.value.swords;
+    console.log(this.selectwords);
+    if (this.selectwords == '') {
+      alert("请输入搜索内容");
+    }
+    else{
+        this.router.navigate(['search',this.selectwords]);
+    }
   }
 }

@@ -9,7 +9,6 @@ body {
   font-size: 14px;
   color: #474747;
   line-height: 1.8;
-  text-align: center;
 }
 
 a {
@@ -27,7 +26,10 @@ a:active {
   text-decoration: none;
   color: #474747;
 }
-
+a:focus{
+  color: #474747;
+  text-decoration: none;
+}
 p,
 dt,
 ul,

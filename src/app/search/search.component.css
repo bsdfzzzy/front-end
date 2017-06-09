@@ -1,0 +1,48 @@
+.lunbo {
+    text-align: center;
+}
+.content {
+    min-height: 400px;
+}
+.content .row {
+    overflow: hidden;
+}
+.searchtitle {
+    height: 80px;
+    line-height: 40px;
+}
+.searchtitle div .searchtitlebg {
+    background: #e9e9e9;
+    height: 40px;
+}
+.searchnum {
+    float: left;
+}
+.searchicon {
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.searchre {
+    margin-top:10px;
+}
+.searchresults{
+    font-size: 18px;
+    padding: 0px 5px;
+    color: #876a31;
+    height: 38PX;
+    line-height: 38PX;
+    float: left;
+}
+.resultslist {
+    border-top: 1px solid;
+}
+.resultslist ul li {
+    font-size: 14px;
+    line-height: 46px;
+    border-bottom: 1px solid #ebebeb;
+}
+.resultslist ul li a {
+    color: #999;
+    margin-left: 50px;
+}
