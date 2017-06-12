@@ -40,10 +40,10 @@
 <!--yd head+nav-->
 
 <div class="ydtop">
-    <div class="headimg">
+    <div class="col-xs-4 headimg">
       <img src="assets/img/title.png" alt="环宇教育" />
     </div>
-    <div class="headsearch">
+    <div class="col-xs-7 headsearch">
       <form #form="ngForm" (ngSubmit)="doSelect(form)">
         <div>
             <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" placeholder="请输入搜索内容" name="swords" ngModel
@@ -52,12 +52,12 @@
         </div>
       </form>
     </div>
-    <div class="headmenu">
-      <div class="btn-group" dropdown>
+    <div class="col-xs-1 headmenu">
+      <div class="btn-group" dropdown placement="bottom right">
         <button dropdownToggle type="button" class="btn dropdown-toggle btnmenu">
             <img src="assets/ico/glyphicons/png/glyphicons-114-justify.png" />
         </button>
-        <ul *dropdownMenu class="dropdown-menu" role="menu">
+        <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
           <li role="menuitem"><a routerLinkActive="active" routerLink="home">首页</a></li>
           <li role="menuitem"><a routerLinkActive="active" routerLink="about">关于我们</a></li>
           <li role="menuitem"><a routerLinkActive="active" routerLink="studyAbroad">美国留学</a></li>

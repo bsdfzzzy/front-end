@@ -18,26 +18,21 @@
   }
 
   .headimg{
-    margin:5px 0 5px 2px;
-    height: 35px;
-    float: left;
+    margin-top:5px;
+    height: 30px;
   }
   .headimg img{
-    height: 35px;
-    /*float: left;*/
+    height: 30px;
   }
   .headsearch{
-    float: left;
-    margin:5px 0 5px 2px;
+    margin-top:5px;
   }
   .headmenu{
-    float: left;
-    margin: 5px 0 5px -20px;
+    margin: 5px 0 5px -33px;
     width: 10px;
   }
   .headmenu div ul {
-    margin-left: -331px;
-    width: 377px;
+    /*width: 377px;*/
   }
   .headmenu div ul li {
     text-align: center;
