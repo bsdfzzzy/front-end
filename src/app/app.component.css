@@ -1,3 +1,72 @@
+@media only screen and (max-width: 767px) {
+  .headtop{
+    display: none;
+  }
+  .nav{
+    display: none;
+  }
+  .cg-flwindow{
+    display: none;
+  }
+  .ydtop{
+    display: block !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    min-height: 45px;
+  }
+
+  .headimg{
+    margin:5px 0 5px 2px;
+    height: 35px;
+    float: left;
+  }
+  .headimg img{
+    height: 35px;
+    /*float: left;*/
+  }
+  .headsearch{
+    float: left;
+    margin:5px 0 5px 2px;
+  }
+  .headmenu{
+    float: left;
+    margin: 5px 0 5px -20px;
+    width: 10px;
+  }
+  .headmenu div ul {
+    margin-left: -331px;
+    width: 377px;
+  }
+  .headmenu div ul li {
+    text-align: center;
+  }
+  .searchform {
+    padding-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .btnform {
+    margin-top: 5px;
+    border-style: none;
+    outline: none;
+    background-color: Transparent;
+  }
+  .btnform img {
+    height: 20px !important;
+  }
+  .btnmenu{
+    background-color: #0099da;
+  }
+  .btnmenu img{
+    height: 15px;
+  }
+}
+
+.ydtop{
+  display: none;
+}
 /****  head top   ****/
 
 .headtop {
@@ -23,14 +92,17 @@
 }
 
 .headtop .row .searchform {
-  /*min-height: 50px;*/
   padding-top: 3%;
   margin-bottom: 2%;
   text-align: center;
 }
 
+.mat-input-container {
+    width: 250px;
+}
+
 .btnform {
-  margin-left: -40px;
+  margin-left: -30px;
   margin-top: 5px;
   border-style: none;
   outline: none;
@@ -80,7 +152,6 @@
   text-decoration: none !important;
 }
 
-
 /****  main  ****/
 
 .main {
@@ -93,6 +164,7 @@
 .footer {
   height: 250px;
   width: 100%;
+  margin-top: 10px;
 }
 
 .footer .footbar {
@@ -174,7 +246,7 @@
 }
 
 .cm-windowlist .box01 .a2 {
-  height: 25px;
+  /*height: 25px;*/
   padding-top: 50px;
   /*background-color: yellow;*/
   /*background: url(../images/ms1-main-icon35.png) no-repeat center 6px;*/
@@ -185,7 +257,7 @@
 }
 
 .cm-windowlist .box02 .a1 {
-  height: 25px;
+  /*height: 25px;*/
   padding-top: 48px;
   /*background-color: red;*/
   /*background: url(../images/ms1-main-icon36.png) no-repeat center 10px;*/

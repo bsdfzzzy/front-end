@@ -1,6 +1,7 @@
-import { ButtonsModule } from 'ngx-bootstrap';
+import { ButtonsModule,BsDropdownModule  } from 'ngx-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
 import { HttpModule,JsonpModule } from '@angular/http';
@@ -32,8 +33,9 @@ import { SearchService } from "./search/search.service";
     JsonpModule,
     RouterModule,
     RouterModule.forRoot(appRoutes),
-    // BrowserAnimationsModule,
+    BrowserAnimationsModule,
     ButtonsModule.forRoot(),
+    BsDropdownModule .forRoot(),
     HomeModule,
     AboutModule,
     studyAbroadModule,
@@ -45,7 +47,7 @@ import { SearchService } from "./search/search.service";
     ContactModule,
     SearchModule
   ],
-  providers: [SearchService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

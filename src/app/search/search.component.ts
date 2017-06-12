@@ -1,7 +1,7 @@
 import { ActivatedRoute, Params } from '@angular/router';
 import { Component, Input, OnInit } from '@angular/core';
-import { SearchResults } from "./searchResults";
-import { SearchService } from "./search.service";
+import { SearchResults } from "./model/searchResults";
+import { SearchService } from "./service/search.service";
 
 @Component({
   selector: 'search-root',
@@ -11,14 +11,14 @@ import { SearchService } from "./search.service";
 })
 export class SearchComponent implements OnInit{
   selectwords: string;
-  num: number = 0;
+  num: number;
   content:Array<object>;
   searchResults: string;
   constructor(
     public activeRoute:ActivatedRoute,
     public searchService:SearchService
   ){
-    console.log(this.num);
+    
   } 
   ngOnInit (){
     this.activeRoute.params.subscribe(

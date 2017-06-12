@@ -1,5 +1,5 @@
-.lunbo {
-    text-align: center;
+.carousel-inner>.item>img{
+    display: initial !important;
 }
 .content {
     min-height: 400px;
