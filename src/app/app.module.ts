@@ -1,10 +1,10 @@
 import { ButtonsModule,BsDropdownModule  } from 'ngx-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
 import { NgModule } from '@angular/core';
 import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
-import { HttpModule,JsonpModule } from '@angular/http';
+import { HttpModule, JsonpModule, Http } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -23,7 +23,7 @@ import { SearchService } from "./search/search.service";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +36,10 @@ import { SearchService } from "./search/search.service";
     BrowserAnimationsModule,
     ButtonsModule.forRoot(),
     BsDropdownModule .forRoot(),
+    TranslateModule.forRoot({
+      provide: TranslateLoader,
+      deps: [Http]
+    }),
     HomeModule,
     AboutModule,
     studyAbroadModule,

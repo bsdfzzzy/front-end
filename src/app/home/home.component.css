@@ -1,5 +1,5 @@
-.carousel-inner>.item>img{
-    display: initial !important;
+.lunbo{
+    width: 100%;
 }
 .home1 {
     min-height: 408px;
@@ -17,6 +17,20 @@
 }
 .home3 {
     min-height: 485px;
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    border:1px solid #d0d0d0;
+    margin-top: 10px;
+}
+.home4{
+    min-height: 408px;
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    border:1px solid #d0d0d0;
+    margin-top: 10px;
+}
+.home5 {
+    min-height: 408px;
     padding: 10px 15px 10px 15px;
     background-color: white;
     border:1px solid #d0d0d0;

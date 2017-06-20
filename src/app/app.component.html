@@ -3,13 +3,12 @@
   <div class="row">
     <div class="col-md-3 col-md-offset-1 logo">
       <img src="assets/img/title.png" alt="环宇教育" />
-      <!--<p class="logo">环宇教育</p>-->
     </div>
     <div class="col-md-3 col-md-offset-4 searchform">
       <form #form="ngForm" (ngSubmit)="doSelect(form)">
         <div>
-            <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" placeholder="请输入搜索内容" name="swords" ngModel
-              #swords="ngModel" type="text" />
+          <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" 
+          placeholder="请输入搜索内容" name="swords" ngModel #swords="ngModel" type="text" />
           <button type="submit" class="btnform"><img src="assets/ico/glyphicons/png/glyphicons-28-search.png"></button>
         </div>
       </form>
@@ -27,7 +26,7 @@
         <li><a routerLinkActive="active" routerLink="studyAbroad">美国留学</a></li>
         <li><a routerLinkActive="active" routerLink="ranking">院校排名</a></li>
         <li><a routerLinkActive="active" routerLink="train">语言培训</a></li>
-        <li><a routerLinkActive="active" routerLink="studyInChina">Study in China</a></li>
+        <li><a routerLinkActive="active" routerLink="studyInChina">Study in China</a></li>  
         <li><a routerLinkActive="active" routerLink="advertise">人才招聘</a></li>
         <li><a routerLinkActive="active" routerLink="cooperation">商务合作</a></li>
         <li><a routerLinkActive="active" routerLink="contact">联系我们</a></li>
@@ -46,7 +45,7 @@
     <div class="col-xs-7 headsearch">
       <form #form="ngForm" (ngSubmit)="doSelect(form)">
         <div>
-            <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" placeholder="请输入搜索内容" name="swords" ngModel
+          <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" placeholder="请输入搜索内容" name="swords" ngModel
               #swords="ngModel" type="text" />
           <button type="submit" class="btnform"><img src="assets/ico/glyphicons/png/glyphicons-28-search.png"></button>
         </div>
