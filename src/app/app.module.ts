@@ -20,10 +20,12 @@ import { CooperationModule } from "./cooperation/cooperation.module";
 import { ContactModule } from "./contact/contact.module";
 import { SearchModule } from "./search/search.module";
 import { SearchService } from "./search/search.service";
+import { MediaviewDirective } from "./media.directive";
 
 @NgModule({
   declarations: [
     AppComponent,
+    MediaviewDirective
   ],
   imports: [
     BrowserModule,

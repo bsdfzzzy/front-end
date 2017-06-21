@@ -1,52 +1,70 @@
-<!--head top-->
-<div class="headtop">
-  <div class="row">
-    <div class="col-md-3 col-md-offset-1 logo">
-      <img src="assets/img/title.png" alt="环宇教育" />
+<div mediaView>
+  <!--head top-->
+  <div id="top" class="headtop">
+    <div class="row">
+      <div id="logo" class="col-md-3 col-md-offset-1 logo col-xs-4">
+        <img src="assets/img/title.png" alt="环宇教育" />
+      </div>
+      <div id="form" class="col-md-3 col-md-offset-4 searchform col-xs-7">
+        <form #form="ngForm" (ngSubmit)="doSelect(form)">
+          <div>
+            <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" placeholder="请输入搜索内容" name="swords"
+              ngModel #swords="ngModel" type="text" />
+            <button type="submit" class="btnform"><img src="assets/ico/glyphicons/png/glyphicons-28-search.png"></button>
+          </div>
+        </form>
+      </div>
+      <div id="headmenu" class="col-md-1 col-xs-1 headmenu">
+        <div class="btn-group" dropdown placement="bottom right">
+        <button dropdownToggle type="button" class="btn dropdown-toggle btnmenu">
+            <img src="assets/ico/glyphicons/png/glyphicons-114-justify.png" />
+        </button>
+        <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+          <li role="menuitem"><a routerLinkActive="active" routerLink="home">首页</a></li>
+          <li role="menuitem"><a routerLinkActive="active" routerLink="about">关于我们</a></li>
+          <li role="menuitem"><a routerLinkActive="active" routerLink="studyAbroad">美国留学</a></li>
+          <li role="menuitem"><a routerLinkActive="active" routerLink="ranking">院校排名</a></li>
+          <li role="menuitem"><a routerLinkActive="active" routerLink="train">语言培训</a></li>
+          <li role="menuitem"><a routerLinkActive="active" routerLink="studyInChina">Study in China</a></li>
+          <li role="menuitem"><a routerLinkActive="active" routerLink="advertise">人才招聘</a></li>
+          <li role="menuitem"><a routerLinkActive="active" routerLink="cooperation">商务合作</a></li>
+          <li role="menuitem"><a routerLinkActive="active" routerLink="contact">联系我们</a></li>
+        </ul>
+      </div>
+      </div>
     </div>
-    <div class="col-md-3 col-md-offset-4 searchform">
-      <form #form="ngForm" (ngSubmit)="doSelect(form)">
-        <div>
-          <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" 
-          placeholder="请输入搜索内容" name="swords" ngModel #swords="ngModel" type="text" />
-          <button type="submit" class="btnform"><img src="assets/ico/glyphicons/png/glyphicons-28-search.png"></button>
-        </div>
-      </form>
-    </div>
-    <div class="col-md-1"></div>
   </div>
-</div>
-<!--nav bar-->
-<div class="nav">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <ul>
-        <li><a routerLinkActive="active" routerLink="home">首页</a></li>
-        <li><a routerLinkActive="active" routerLink="about">关于我们</a></li>
-        <li><a routerLinkActive="active" routerLink="studyAbroad">美国留学</a></li>
-        <li><a routerLinkActive="active" routerLink="ranking">院校排名</a></li>
-        <li><a routerLinkActive="active" routerLink="train">语言培训</a></li>
-        <li><a routerLinkActive="active" routerLink="studyInChina">Study in China</a></li>  
-        <li><a routerLinkActive="active" routerLink="advertise">人才招聘</a></li>
-        <li><a routerLinkActive="active" routerLink="cooperation">商务合作</a></li>
-        <li><a routerLinkActive="active" routerLink="contact">联系我们</a></li>
-      </ul>
+  <!--nav bar-->
+  <div id="nav" class="nav">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <ul>
+          <li><a routerLinkActive="active" routerLink="home">首页</a></li>
+          <li><a routerLinkActive="active" routerLink="about">关于我们</a></li>
+          <li><a routerLinkActive="active" routerLink="studyAbroad">美国留学</a></li>
+          <li><a routerLinkActive="active" routerLink="ranking">院校排名</a></li>
+          <li><a routerLinkActive="active" routerLink="train">语言培训</a></li>
+          <li><a routerLinkActive="active" routerLink="studyInChina">Study in China</a></li>
+          <li><a routerLinkActive="active" routerLink="advertise">人才招聘</a></li>
+          <li><a routerLinkActive="active" routerLink="cooperation">商务合作</a></li>
+          <li><a routerLinkActive="active" routerLink="contact">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="col-md-1"></div>
     </div>
-    <div class="col-md-1"></div>
   </div>
-</div>
 
-<!--yd head+nav-->
+  <!--yd head+nav-->
 
-<div class="ydtop">
+  <!--<div class="ydtop">
     <div class="col-xs-4 headimg">
       <img src="assets/img/title.png" alt="环宇教育" />
     </div>
     <div class="col-xs-7 headsearch">
       <form #form="ngForm" (ngSubmit)="doSelect(form)">
         <div>
-          <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" placeholder="请输入搜索内容" name="swords" ngModel
-              #swords="ngModel" type="text" />
+          <input class="form-control" style="width:90%;display: inline-block;padding: 6px 30px 6px 12px;" placeholder="请输入搜索内容" name="swords"
+            ngModel #swords="ngModel" type="text" />
           <button type="submit" class="btnform"><img src="assets/ico/glyphicons/png/glyphicons-28-search.png"></button>
         </div>
       </form>
@@ -69,60 +87,61 @@
         </ul>
       </div>
     </div>
-</div>
+  </div>-->
 
-<!--main-->
-<div class="main">
-  <router-outlet></router-outlet>
-</div>
-<!--footer-->
-<div class="footer">
-  <div class="footbar">
-    <div class="row">
-      <div class="col-md-11 col-md-offset-1">
-        <ul>
-          <li>友情链接</li>
-        </ul>
-      </div>
-    </div>
+  <!--main-->
+  <div class="main">
+    <router-outlet></router-outlet>
   </div>
-  <div class="footmain">
-    <div class="row">
-      <div class="col-md-11 col-md-offset-1">
-        <ul>
-          <li>1111</li>
-          <li>2222</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footfoot">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Copyright © 2010-2015 *****</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!--cbwindow-->
-<div class="cg-flwindow">
-  <div class="cm-flwindow">
-    <ul class="cm-windowlist">
-      <li class="box01"><a class="a2" href="#">快速导航</a></li>
-      <li class="box02">
-        <a class="a1 a2" href="#">手机访问</a>
-        <div class="cm-phopen f-none" style="display: none;">
-          <a href="#"><img class="f-imgresponsive" src="./images/ms1-main-icon38.jpg" alt="" width="119" height="118"></a>
-          <p class="f-tac">扫一扫</p>
-          <p class="p1">
-            或在手机浏览器输入
-            <a href="#" class="cu-color4">mshw.net</a>
-          </p>
+  <!--footer-->
+  <div class="footer">
+    <div class="footbar">
+      <div class="row">
+        <div class="col-md-11 col-md-offset-1">
+          <ul>
+            <li>友情链接</li>
+          </ul>
         </div>
-      </li>
-      <li class="box03">
-        <a class="a2" href="javascript:;"></a>
-      </li>
-    </ul>
+      </div>
+    </div>
+    <div class="footmain">
+      <div class="row">
+        <div class="col-md-11 col-md-offset-1">
+          <ul>
+            <li>1111</li>
+            <li>2222</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footfoot">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright © 2010-2015 *****</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--cbwindow-->
+  <div id="flwindow" class="cg-flwindow">
+    <div class="cm-flwindow">
+      <ul class="cm-windowlist">
+        <li class="box01"><a class="a2" href="#">快速导航</a></li>
+        <li class="box02">
+          <a class="a1 a2" href="#">手机访问</a>
+          <div class="cm-phopen f-none" style="display: none;">
+            <a href="#"><img class="f-imgresponsive" src="./images/ms1-main-icon38.jpg" alt="" width="119" height="118"></a>
+            <p class="f-tac">扫一扫</p>
+            <p class="p1">
+              或在手机浏览器输入
+              <a href="#" class="cu-color4">mshw.net</a>
+            </p>
+          </div>
+        </li>
+        <li class="box03">
+          <a class="a2" href="javascript:;"></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
