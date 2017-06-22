@@ -16,20 +16,16 @@ export class ScrollDirective {
   public check = setInterval(
     ()=>{ 
       this.scrollleft(this.el.nativeElement.style.left);
-    }, 200);
+    }, 10);
 
   private scrollleft(value: string) {
+        // this.renderer.setElementClass(this.el.nativeElement,"addpanes",true);
     if(value == "0%"){
-        this.renderer.setElementClass(this.el.nativeElement,"addpanes",false);
+        // this.renderer.setElementClass(this.el.nativeElement,"addpanes",false);
         this.el.nativeElement.style.left = "-300%";
-    }else {
-        this.renderer.setElementClass(this.el.nativeElement,"addpanes",true);
-    }
-    if(value == "-400%"){
-        this.renderer.setElementClass(this.el.nativeElement,"addpanes",false);
+    }else if(value == "-400%"){
+        // this.renderer.setElementClass(this.el.nativeElement,"addpanes",false);
         this.el.nativeElement.style.left = "-100%";
-    }else {
-        this.renderer.setElementClass(this.el.nativeElement,"addpanes",true);
     }
   }
 }

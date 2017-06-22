@@ -77,9 +77,9 @@ button {
     overflow: hidden;
     padding: 0;
     position: relative;
-    transition: left 0.2s;
+    /*transition: left 0.2s;
     transition-timing-function: ease-in-out;
-    animation: carousel 30s infinite;
+    animation: carousel 30s infinite;*/
 }
 
  ol li {

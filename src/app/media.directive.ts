@@ -52,7 +52,6 @@ export class MediaviewDirective {
             this.renderer.setElementStyle(this.el.nativeElement.querySelector('#nav'),"display","block");
             this.renderer.setElementStyle(this.el.nativeElement.querySelector('#carousel'),"height","500px");
             this.renderer.setElementStyle(this.el.nativeElement.querySelector('#flwindow'),"display","block");
-            
         }
   }
 
