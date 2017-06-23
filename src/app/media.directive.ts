@@ -8,21 +8,26 @@ export class MediaviewDirective {
   constructor(private el: ElementRef,private renderer:Renderer) {  }
   
   @HostListener('window:resize') sizeCheck(){
-    this.checking;
+    this.sizeChecking;
     this.changeWindow();
   }
-  public checking = setTimeout(
+  public sizeChecking = setInterval(
     ()=>{
       this.changeWindow();
     },1);
 
   @HostListener('window:scroll') scrollCheck(){
+    this.scrollChecking;
     this.changeScroll();
   }
+    public scrollChecking = setInterval(
+    ()=>{
+      this.changeScroll();
+    },1);
 
   private changeScroll(){
     this.scrolltop = document.body.scrollTop;
-    if(this.scrolltop < 215){
+    if(this.scrolltop < 215 || window.screen.width < 768){
       this.renderer.setElementStyle(this.el.nativeElement.querySelector('#flwindow'),"display","none");
     }else{
       this.renderer.setElementStyle(this.el.nativeElement.querySelector('#flwindow'),"display","block");
@@ -39,8 +44,11 @@ export class MediaviewDirective {
             this.renderer.setElementClass(this.el.nativeElement.querySelector('#form'),"searchform",false);
             this.renderer.setElementStyle(this.el.nativeElement.querySelector('#headmenu'),"display","block");
             this.renderer.setElementStyle(this.el.nativeElement.querySelector('#nav'),"display","none");
-            this.renderer.setElementStyle(this.el.nativeElement.querySelector('#carousel'),"height","200px");
-            this.renderer.setElementStyle(this.el.nativeElement.querySelector('#flwindow'),"display","none");
+            this.renderer.setElementStyle(this.el.nativeElement.querySelector('#carousel'),"height",""+0.3*window.innerHeight+"px");
+            this.renderer.setElementStyle(this.el.nativeElement.querySelector('#prevbtn'),"width","25px");
+            this.renderer.setElementStyle(this.el.nativeElement.querySelector('#nextbtn'),"width","25px");
+            /**#gopage放最后  具体原因不清楚233 */
+            this.renderer.setElementClass(this.el.nativeElement.querySelector('#gopage'),"gopage",false);
         }else{
             this.renderer.setElementClass(this.el.nativeElement.querySelector('#top'),"ydtop",false);
             this.renderer.setElementClass(this.el.nativeElement.querySelector('#top'),"headtop",true);
@@ -51,7 +59,10 @@ export class MediaviewDirective {
             this.renderer.setElementStyle(this.el.nativeElement.querySelector('#headmenu'),"display","none");
             this.renderer.setElementStyle(this.el.nativeElement.querySelector('#nav'),"display","block");
             this.renderer.setElementStyle(this.el.nativeElement.querySelector('#carousel'),"height","500px");
-            this.renderer.setElementStyle(this.el.nativeElement.querySelector('#flwindow'),"display","block");
+            this.renderer.setElementStyle(this.el.nativeElement.querySelector('#prevbtn'),"width","auto");
+            this.renderer.setElementStyle(this.el.nativeElement.querySelector('#nextbtn'),"width","auto");
+
+            this.renderer.setElementClass(this.el.nativeElement.querySelector('#gopage'),"gopage",true);
         }
   }
 

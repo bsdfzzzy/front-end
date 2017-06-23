@@ -55,7 +55,7 @@ export class CarouselComponent implements OnInit {
         () => {
           this.goto();
         }, 0);
-      console.log(this.pPV,'--------return');
+      // console.log(this.pPV,'--------return');
       return this.pPV;
     } else if (this.np == 0) {//prev
       this.speed = -2;
@@ -101,7 +101,7 @@ export class CarouselComponent implements OnInit {
     }
     this.sum += this.speed;
     this.pPV = "-" + this.sum + "%";
-      console.log(this.pPV,'-------------settimeout');
+      // console.log(this.pPV,'-------------settimeout');
     return this.pPV;
   }
 

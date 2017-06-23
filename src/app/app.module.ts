@@ -1,4 +1,4 @@
-import { ButtonsModule,BsDropdownModule  } from 'ngx-bootstrap';
+import { ButtonsModule, BsDropdownModule, PaginationConfig } from 'ngx-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
@@ -21,11 +21,12 @@ import { ContactModule } from "./contact/contact.module";
 import { SearchModule } from "./search/search.module";
 import { SearchService } from "./search/search.service";
 import { MediaviewDirective } from "./media.directive";
+import { PaginationConfigFactory } from "./pagination.config";
 
 @NgModule({
   declarations: [
     AppComponent,
-    MediaviewDirective
+    MediaviewDirective,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +54,10 @@ import { MediaviewDirective } from "./media.directive";
     ContactModule,
     SearchModule
   ],
-  providers: [],
+  providers: [{
+    provide:PaginationConfig,
+    useFactory:PaginationConfigFactory
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
