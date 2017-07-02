@@ -1,12 +1,35 @@
 .lunbo{
     width: 100%;
 }
+.list {
+    margin-top: 20px;
+}
+.list li {
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+    display: block;
+    line-height: 39px;
+}
+.list li:last-child {
+    border-width: 0;
+}
+.list li a p {
+    width: 230px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
 .home1 {
     min-height: 408px;
     padding: 10px 15px 10px 15px;
     background-color: white;
     border:1px solid #d0d0d0;
     margin-top: 10px;
+}
+.home1 .row div img {
+    height: 200px;
+    margin-top: 20px;
 }
 .home2 {
     min-height: 408px;

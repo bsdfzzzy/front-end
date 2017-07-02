@@ -1,0 +1,55 @@
+.acommonlogo img {
+    width: 100%;
+    height: 100%;  
+}
+.acommonnav{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.acommonnav .row {
+    height: 100%;
+}
+.acommonnav .row .acommontitle{
+    height: 100%;
+}
+.acommonnav .row .acommontitle img{
+    height: 100%;
+}
+.acommonnav .row div{
+    height: 100%;
+}
+.acommonnav .row div ul {
+  height: 100%;
+  width: 100%;
+}
+
+.acommonnav .row div ul li {
+  float: left;
+  font-size: 14px;
+  /*width: 11%;*/
+  width: 112px;
+  height: 100%;
+  text-align: center;
+}
+
+.acommonnav .row div ul li a {
+  display: block;
+}
+
+.acommonnav .row div ul li a:hover {
+  background-color: #0099da;
+  color: white;
+}
+
+.active {
+  background-color: #0099da;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.acommonmain{
+    min-height: 408px;
+    background-color: white;
+    margin-top: 10px;
+}

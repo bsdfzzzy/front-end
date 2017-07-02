@@ -252,7 +252,15 @@
 .footer .footfoot .row div p {
   color: white;
 }
-
+.foot{
+  height: 45px;
+}
+.foot .footbar{
+  display: none;
+}
+.foot .footmain{
+  display: none;
+}
 
 /*浮动窗口*/
 

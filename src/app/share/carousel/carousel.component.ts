@@ -63,7 +63,7 @@ export class CarouselComponent implements OnInit {
         () => {
           this.goto();
         }, 0);
-      console.log(this.pPV);
+      // console.log(this.pPV);
       return this.pPV;
     } else {
       this.speed = 0;

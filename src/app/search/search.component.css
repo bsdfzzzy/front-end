@@ -4,6 +4,18 @@
 .content .row {
     overflow: hidden;
 }
+.ydsearch{
+
+}
+/*.ydsearch li {
+
+}*/
+.ydsearch li a p {
+    width: 200px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
 .searchtitle {
     height: 80px;
     line-height: 40px;
@@ -33,27 +45,32 @@
 }
 .resultslist {
     border-top: 1px solid;
-    min-height: 500px;
+    height: 550px;
     background-color: white;
     border-right: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     border-left:1px solid #ebebeb;
 }
 .resultslist  ul {
-    height: 422px;
+    height: 475px;
 }
 .resultslist ul li {
-    font-size: 14px;
-    line-height: 46px;
+    /*font-size: 14px;
+    line-height: 46px;*/
     border-bottom: 1px solid #ebebeb;
+    height: 60px;
+    margin-top: -15px;
 }
 .resultslist ul li a {
     color: #999;
     margin-left: 50px;
 }
+.time {
+    float: right;
+    margin-top: -25px;
+}
 .page{
-    /*position: absolute;
-    bottom: 0px;*/
+    margin-top: -29px;
 }
 .gopage{
     margin-top: 20px;

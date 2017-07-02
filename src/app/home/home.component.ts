@@ -1,5 +1,5 @@
 import { ActivatedRoute } from '@angular/router';
-import { Component, OnInit,animate,style,transition,trigger,state,HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HomeService } from "./service/home.service";
 import { flyIn } from "../animate/fly-in";
 
@@ -13,7 +13,7 @@ import { flyIn } from "../animate/fly-in";
 export class HomeComponent implements OnInit{
   num: number;
   content:Array<object>;
-  searchResults: string;
+  newscontent: Array<object>;
   
   constructor(
     public activeRoute:ActivatedRoute,
@@ -26,8 +26,9 @@ export class HomeComponent implements OnInit{
   public loadSource (){
     this.homeService.gethomedata().subscribe(
           res=>{
-            this.num = res[0].num;
-            this.content = res[0].content;
+            this.num = res["num"];
+            this.content = res["content"];
+            this.newscontent = this.content.slice(0,5);
             console.log(this.num,this.content);
           },
           error => {console.log(error)},

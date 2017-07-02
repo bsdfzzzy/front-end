@@ -45,7 +45,7 @@ export class SearchComponent implements OnInit{
   }
  
   public pageChanged(event: any): void {
-    this.viewcontent = this.content.slice((event.page - 1)*this.itemsPerPage,event.page*this.itemsPerPage-1);
+    this.viewcontent = this.content.slice((event.page - 1)*this.itemsPerPage,event.page*this.itemsPerPage);
     // console.log('Page changed to: ' + event.page);
     // console.log('Number items per page: ' + event.itemsPerPage);
   }
@@ -53,10 +53,10 @@ export class SearchComponent implements OnInit{
   public loadSource() {
     this.searchService.getSearchResults(this.selectwords).subscribe(
           res=>{
-            this.num = res[0].num;
-            this.totalItems = res[0].num;
-            this.content = res[0].content;
-            this.viewcontent = this.content.slice(1,10);
+            this.num = res["num"];
+            this.totalItems = res["num"];
+            this.content = res["content"];
+            this.viewcontent = this.content.slice(0,10);
             this.pagenums =Math.ceil(this.totalItems / this.itemsPerPage);
             console.log(this.num,this.content);
           },

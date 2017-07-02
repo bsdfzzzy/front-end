@@ -1,5 +1,24 @@
-ranking html   ranking html   ranking html   ranking html   
-ranking html   ranking html   ranking html   ranking html   
-ranking html   ranking html   ranking html   ranking html   
-ranking html   ranking html   ranking html   ranking html   
-ranking html   ranking html   ranking html   ranking html   
+<div id="acommonlogo" class="acommonlogo">
+      <img src="assets/img/about.jpg" />
+</div>
+<div id="acommonnav" class="acommonnav">
+      <div class="row">
+            <div class="acommontitle col-md-2 col-md-offset-1">
+                  <img src="assets/img/about.png" />
+            </div>
+            <div class="col-md-9">
+                  <ul id="ulnav">
+                        <li><a routerLinkActive="active" routerLink="USA">美国大学排名</a></li>
+                        <li><a routerLinkActive="active" routerLink="THE">泰晤士报排名</a></li>
+                        <li><a routerLinkActive="active" routerLink="QS">QS排名</a></li>
+                        <li><a routerLinkActive="active" routerLink="ARWU">世界大学学术排名</a></li>
+                  </ul>
+            </div>
+      </div>
+</div>
+<div id="acommonmain" class="acommonmain container">
+      <router-outlet></router-outlet>
+      <!--<div *ngFor="let item of acommoncontent">
+            {{item.text}}
+      </div>-->
+</div>

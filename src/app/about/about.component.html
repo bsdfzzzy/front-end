@@ -1,8 +1,25 @@
- <div [@flyIn]="'active'">
-        about html   about html   about html   about html  
-  about html   about html   about html   about html  
-   about html   about html   about html   about html  
-    about html   about html   about html   about html  
-     about html   about html   about html   about html  
-      about html   about html   about html   about html  
- </div>
+<div id="acommonlogo" class="acommonlogo">
+      <img src="assets/img/about.jpg" />
+</div>
+<div id="acommonnav" class="acommonnav">
+      <div class="row">
+            <div class="acommontitle col-md-2 col-md-offset-1">
+                  <img src="assets/img/about.png" />
+            </div>
+            <div class="col-md-9">
+                  <ul id="ulnav">
+                        <li><a routerLinkActive="active" routerLink="huanyu">环宇简介</a></li>
+                        <li><a routerLinkActive="active" routerLink="mission">我们的使命</a></li>
+                        <li><a routerLinkActive="active" routerLink="value">我们的价值观</a></li>
+                        <li><a routerLinkActive="active" routerLink="vision">我们的愿景</a></li>
+                        <li><a routerLinkActive="active" routerLink="team">我们的团队</a></li>
+                  </ul>
+            </div>
+      </div>
+</div>
+<div id="acommonmain" class="acommonmain container">
+      <router-outlet></router-outlet>
+      <!--<div *ngFor="let item of acommoncontent">
+            {{item.text}}
+      </div>-->
+</div>

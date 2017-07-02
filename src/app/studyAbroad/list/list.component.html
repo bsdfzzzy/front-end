@@ -1,0 +1,28 @@
+  <div class="content">
+    <div class="row">
+    <div class="col-md-10 col-md-offset-1 resultslist">
+      <ul id="ydsearch">
+        <li *ngFor="let item of listcontent">
+          <a class="godetails" (click)="go(item.id)">{{item.title}}</a>
+        </li>
+      </ul>
+      <div id="page" class="row">
+        <div class="col-md-8">
+          <pagination [totalItems]="totalItems" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)" [itemsPerPage]="itemsPerPage" [boundaryLinks]="true" [maxSize]="maxSize"></pagination>
+        </div>
+        <div id="gopage" class="col-md-4">
+          <form #form="ngForm" (ngSubmit)="setPage(form)">
+            <span>共</span>
+            {{pagenums}}
+            <span>页&nbsp;&nbsp;&nbsp;</span>
+            <span>跳转至第</span>
+            <input class="pageinput" name="pagenum" [(ngModel)]="pagenum" type="text" maxlength="2"/>
+            <span>页</span>
+            <button type="submit" class="btn btn-info" [disabled]="!pagenum" (click)="setPage(pagenum)">跳转</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+

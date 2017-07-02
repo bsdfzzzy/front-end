@@ -1,3 +1,5 @@
+import { ScholarshipsComponent } from './Scholarships/Scholarships.component';
+import { UniversitiesComponent } from './Universities/Universities.component';
 import { studyInChinaRoutes } from './studyInChina.routes';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -11,7 +13,9 @@ import { StudyInChinaComponent } from "./studyInChina.component";
     RouterModule.forChild(studyInChinaRoutes),
   ],
   declarations: [
-    StudyInChinaComponent
+    StudyInChinaComponent,
+    UniversitiesComponent,
+    ScholarshipsComponent
   ]
 })
 export class StudyInChinaModule { }

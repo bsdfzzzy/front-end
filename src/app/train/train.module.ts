@@ -1,3 +1,7 @@
+import { TOEFLComponent } from './TOEFL/TOEFL.component';
+import { IETLSComponent } from './IETLS/IETLS.component';
+import { GREComponent } from './GRE/GRE.component';
+import { GMATComponent } from './GMAT/GMAT.component';
 import { trainRoutes } from './train.routes';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -11,7 +15,11 @@ import { TrainComponent } from "./train.component";
     RouterModule.forChild(trainRoutes),
   ],
   declarations: [
-    TrainComponent
+    TrainComponent,
+    GMATComponent,
+    GREComponent,
+    IETLSComponent,
+    TOEFLComponent
   ]
 })
 export class TrainModule { }

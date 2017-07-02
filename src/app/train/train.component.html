@@ -1,4 +1,24 @@
-train html  train html  train html  
-train html  train html  train html  
-train html  train html  train html  
-train html  train html  train html  
+<div id="acommonlogo" class="acommonlogo">
+      <img src="assets/img/about.jpg" />
+</div>
+<div id="acommonnav" class="acommonnav">
+      <div class="row">
+            <div class="acommontitle col-md-2 col-md-offset-1">
+                  <img src="assets/img/about.png" />
+            </div>
+            <div class="col-md-9">
+                  <ul id="ulnav">
+                        <li><a routerLinkActive="active" routerLink="GMAT">GMAT</a></li>
+                        <li><a routerLinkActive="active" routerLink="GRE">GRE</a></li>
+                        <li><a routerLinkActive="active" routerLink="IETLS">IETLS</a></li>
+                        <li><a routerLinkActive="active" routerLink="TOEFL">TOEFL</a></li>
+                  </ul>
+            </div>
+      </div>
+</div>
+<div id="acommonmain" class="acommonmain container">
+      <router-outlet></router-outlet>
+      <!--<div *ngFor="let item of acommoncontent">
+            {{item.text}}
+      </div>-->
+</div>

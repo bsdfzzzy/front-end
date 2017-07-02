@@ -1,5 +1,31 @@
-study-abroad html  study-abroad html  study-abroad html  study-abroad html  
-study-abroad html  study-abroad html  study-abroad html  study-abroad html  
-study-abroad html  study-abroad html  study-abroad html  study-abroad html  
-study-abroad html  study-abroad html  study-abroad html  study-abroad html  
-study-abroad html  study-abroad html  study-abroad html  study-abroad html  
+<div id="acommonlogo" class="acommonlogo">
+      <img src="assets/img/about.jpg" />
+</div>
+<div id="acommonnav" class="acommonnav">
+      <div class="row">
+            <div class="acommontitle col-md-2 col-md-offset-1">
+                  <img src="assets/img/about.png" />
+            </div>
+            <div class="col-md-9">
+                  <ul id="ulnav">
+                        <li><a routerLinkActive="active" routerLink="assessAndPlan">评估与策划</a></li>
+                        <li><a routerLinkActive="active" routerLink="examination">出国考试</a></li>
+                        <li><a routerLinkActive="active" routerLink="promotion">背景提升</a></li>
+                        <li><a routerLinkActive="active" routerLink="studyOutside">海外游学</a></li>
+                        <li><a routerLinkActive="active" routerLink="guide">文书指导</a></li>
+                        <li><a routerLinkActive="active" routerLink="visa">签证办理</a></li>
+                        <li><a routerLinkActive="active" routerLink="example">成功案例</a></li>
+                  </ul>
+            </div>
+      </div>
+</div>
+<div id="acommonmain">
+      <div class="row">
+            <div class="col-md-10 col-md-offset-1 acommonmain">
+                  <router-outlet></router-outlet>
+            </div>
+      </div>
+      <!--<div *ngFor="let item of acommoncontent">
+            {{item.text}}
+      </div>-->
+</div>
