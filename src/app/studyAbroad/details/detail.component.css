@@ -17,7 +17,6 @@
     min-height: 400px;
     padding: 10px 15px 10px 15px;
     background-color: white;
-    margin-top: 10px;
 }
 .godetails{
     cursor: pointer;
@@ -30,19 +29,7 @@
     text-overflow:ellipsis;
     cursor: pointer;
     display: inline-flex;
-    /*background: #bcbcbc;
-    color: #fff;
-    padding: 0 5px;
-    margin-right: 6px;
-    line-height: 25px;
-    height: 25px;*/
 }
-/*h3{
-    width: 220px;
-    overflow:hidden;
-    white-space:nowrap;
-    text-overflow:ellipsis;
-}*/
 .go{
     display: inline-block;
     background: #bcbcbc;

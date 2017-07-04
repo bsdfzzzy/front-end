@@ -1,0 +1,92 @@
+@media only screen and (max-width: 767px) {
+    /*  head  */
+  .ydtop{
+    width: 100% ;
+    margin: 0 ;
+    padding: 0 ;
+    background-color: white ;
+    min-height: 45px ;
+  }
+
+  .headimg{
+    margin-top:5px ;
+    height: 30px ;
+  }
+  .headimg img{
+    height: 30px;
+  }
+  .headsearch{
+    margin-top:5px;
+    margin-left: -15px;
+  }
+  .headmenu{
+    display: block;
+    margin: 5px 0 5px -20px;
+    width: 10px;
+  }
+  .headmenu div ul {
+    
+  }
+  .headmenu div ul li {
+    text-align: center ;
+  }
+  .btnform {
+  margin-left: -30px;
+  margin-top: 5px;
+  border-style: none;
+  outline: none;
+  background-color: Transparent;
+}
+.btnform img {
+  height: 20px !important;
+}
+  .btnmenu{
+    background-color: #0099da;
+  }
+  .btnmenu img{
+    height: 15px !important;
+  }
+
+/*   nav    */
+.nav{
+    display: none;
+}
+.active {
+  background-color: #0099da;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/*   foot    */
+.foot{
+  height: 45px;
+}
+.foot .footbar{
+  display: none;
+}
+.foot .footmain{
+  display: none;
+}
+.footer .footfoot {
+  height: 45px;
+  width: 100%;
+  background-color: #0096d8;
+}
+
+.footer .footfoot .row div {
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+}
+
+.footer .footfoot .row div p {
+  color: white;
+}
+
+/*    flwindow    */
+#flwindow{
+    display: none !important;
+}
+
+
+}

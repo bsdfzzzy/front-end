@@ -1,4 +1,3 @@
-import { examplelistComponent } from './example/list/list.component';
 import { visaComponent } from './visa/visa.component';
 import { studyOutsideComponent } from './studyOutside/studyOutside.component';
 import { promotionComponent } from './promotion/promotion.component';
@@ -15,7 +14,6 @@ import { studyAbroadComponent } from "./studyAbroad.component";
 import { listComponent } from "./list/list.component";
 import { detailComponent } from "./details/detail.component";
 import { PaginationModule } from "ngx-bootstrap";
-import { exampledetailComponent } from "./example/details/detail.component";
 
 @NgModule({
   imports: [
@@ -35,9 +33,7 @@ import { exampledetailComponent } from "./example/details/detail.component";
     guideComponent,
     promotionComponent,
     studyOutsideComponent,
-    visaComponent,
-    exampledetailComponent,
-    examplelistComponent
+    visaComponent
   ]
 })
 export class studyAbroadModule { }

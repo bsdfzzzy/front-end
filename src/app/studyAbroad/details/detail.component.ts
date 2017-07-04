@@ -1,5 +1,5 @@
 import { Router, ActivatedRoute } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import { studyAbroadService } from "../service/studyAbroad.service";
 
@@ -13,6 +13,7 @@ export class detailComponent implements OnInit {
     selectid:number;
     content:Array<object>;
     length:number;
+    typeid:number;
     constructor(
       public activeRoute:ActivatedRoute,
       public studyAbroadService:studyAbroadService,
@@ -20,25 +21,22 @@ export class detailComponent implements OnInit {
       ){}
 
     ngOnInit(){
-        this.activeRoute.queryParams.subscribe(
+        this.activeRoute.params.subscribe(
           params => { 
-            let paramslength:number = 0;
-            console.log(paramslength);
-            for(var js2 in params){
-                paramslength = paramslength + 1;
-              }
-            this.selectid = parseInt(params[paramslength - 1]) + 10*(paramslength - 1);
+            this.selectid = parseInt(params.docid);
+            this.typeid = parseInt(params.typeid);
+            console.log(this.typeid);
           }
         );
-        this.loadSource();
+        this.loadSource(this.typeid);
       }
 
-    public loadSource(){
-      this.studyAbroadService.getstudyAbroaddata().subscribe(
+    public loadSource(typeid){
+      this.studyAbroadService.getstudyAbroaddata(typeid).subscribe(
           res=>{
             this.content = res["content"];
             this.length = this.content.length;
-            console.log(this.length );
+            console.log(this.length,typeid);
           },
           error => {console.log(error)},
           () => {}
@@ -49,6 +47,10 @@ export class detailComponent implements OnInit {
       console.log(this.selectid);
     }
     public golist(){
-      // this.router.navigate(['studyAbroad/example/list']);
+      switch(this.typeid){
+        case 1: this.router.navigate(['studyAbroad/example']); break;
+        
+        default:break;
+      }
     }
 }

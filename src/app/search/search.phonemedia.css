@@ -1,0 +1,17 @@
+@media only screen and (max-width: 767px) {
+    .ydsearch{
+
+    }
+    /*.ydsearch li {
+
+    }*/
+    .ydsearch li a p {
+        width: 200px;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+    .page{
+        margin-top: -29px;
+    }
+}

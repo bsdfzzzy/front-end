@@ -53,21 +53,30 @@ export const studyAbroadRoutes = [
             {
                 path:'example',/**成功案例 */
                 component:exampleComponent,
-                children:[
-                    {
-                        path: '',
-                        redirectTo:'examplelist',
-                        pathMatch:'full'
-                    },
-                    {
-                        path: 'examplelist',
-                        component: examplelistComponent 
-                    },
-                    {
-                        path:'exampledetail/:id',
-                        component:exampledetailComponent
-                    }
-                ]
+                // children:[
+                //     {
+                //         path: '',
+                //         redirectTo:'examplelist',
+                //         pathMatch:'full'
+                //     },
+                //     {
+                //         path: 'examplelist',
+                //         component: examplelistComponent 
+                //     },
+                //     {
+                //         path:'exampledetail/:id',
+                //         component:exampledetailComponent
+                //     }
+                // ]
+            }
+            ,
+            {
+                path: 'list/:typeid',
+                component: listComponent 
+            },
+              {
+                path:'detail',
+                component:detailComponent
             }
 
         ]

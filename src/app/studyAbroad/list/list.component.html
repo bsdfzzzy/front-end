@@ -1,6 +1,7 @@
   <div class="content">
     <div class="row">
-    <div class="col-md-10 col-md-offset-1 resultslist">
+    <div class="col-md-12 resultslist">
+
       <ul id="ydsearch">
         <li *ngFor="let item of listcontent">
           <a class="godetails" (click)="go(item.id)">{{item.title}}</a>

@@ -60,7 +60,7 @@
 }*/
 
 /*监听media兼容移动端*/
-  .ydtop{
+  /*.ydtop{
     width: 100% ;
     margin: 0 ;
     padding: 0 ;
@@ -102,10 +102,11 @@
     height: 15px !important;
   }
 
+*/
 
+@import "app.phonemedia.css";
 
-
-
+@media only screen and (min-width: 768px) {
 /****  head top   ****/
 
 .headtop {
@@ -150,11 +151,14 @@
 .btnform img {
   height: 20px !important;
 }
-
+.headmenu{
+    display: none;
+  }
 
 /****  nav bar   ****/
 
 .nav {
+  display: block;
   min-height: 45px;
   width: 100%;
   border-top: 1px solid #d0d0d0;
@@ -252,17 +256,12 @@
 .footer .footfoot .row div p {
   color: white;
 }
-.foot{
-  height: 45px;
-}
-.foot .footbar{
-  display: none;
-}
-.foot .footmain{
-  display: none;
-}
+
 
 /*浮动窗口*/
+#flwindow{
+    display: block;
+}
 
 .cg-flwindow {
   position: fixed;
@@ -340,4 +339,5 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
 }

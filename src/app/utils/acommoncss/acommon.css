@@ -1,0 +1,28 @@
+@media only screen and (min-width: 768px) {
+    #acommonlogo{
+
+    }
+    #acommonnav{
+        height: 45px;
+    }
+    #ulnav{
+        line-height: 45px;
+    }
+    #acommonmain{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #acommonlogo{
+
+    }
+    #acommonnav{
+        height: 30px;
+    }
+    #ulnav{
+        line-height: 30px;
+    }
+    #acommonmain{
+        margin-top: 60px;
+    }
+}

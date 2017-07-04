@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchComponent } from "./search.component";
 import { PaginationModule } from "ngx-bootstrap";
-import { CarouselModule } from "../share/carousel/carousel.module";
+import { CarouselModule } from "../utils/carousel/carousel.module";
 
 @NgModule({
   imports: [

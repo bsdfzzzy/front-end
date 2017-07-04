@@ -11,15 +11,16 @@ export class studyAbroadService {
     constructor(private http: Http){
 
     }
-    public getstudyAbroaddata(): Observable<studyAbroadData[]> {
+    public getstudyAbroaddata(typeid:number): Observable<studyAbroadData[]> {
         let params = new URLSearchParams();
+        params.set('typeid',String(typeid));
         return this.http
-               .get('assets/data/search.json')
+               .get('assets/data/search.json',{search:params})
                .map((res:Response) => {
                    let result=res.json();
                    return result;
                })
                .catch((error:any) => Observable.throw(error || 'Server error'));
-
   }
+  
 }

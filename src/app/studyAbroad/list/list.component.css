@@ -6,7 +6,6 @@
 }
 .godetails{
     cursor: pointer;
-    padding-top: 25px;
     display: block;
 }
 .go{
@@ -33,8 +32,8 @@
     /*font-size: 14px;
     line-height: 46px;*/
     border-bottom: 1px solid #ebebeb;
-    height: 60px;
-    margin-top: -15px;
+    height: 45px;
+    line-height: 45px;
 }
 .resultslist ul li a {
     color: #999;

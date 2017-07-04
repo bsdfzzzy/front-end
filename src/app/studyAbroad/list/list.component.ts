@@ -1,29 +1,36 @@
 import { Router, ActivatedRoute } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { studyAbroadService } from "../service/studyAbroad.service";
-
+import { getTypeIdService } from "../service/getTypeId.service";
 @Component({
   selector: 'list-root',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css'],
-  providers:[studyAbroadService]
+  providers:[
+    studyAbroadService,
+    getTypeIdService
+  ]
 })
 export class listComponent implements OnInit{
   num: number;
   content:Array<object>;
   listcontent:Array<object>;
-  
+  @Input()
+  typeid:number;
   constructor(
     public studyAbroadService:studyAbroadService,
     public router:Router,
-    public activeroute:ActivatedRoute
+    public activeroute:ActivatedRoute,
+    public getTypeIdService:getTypeIdService
   ){}
 
   ngOnInit() {
     this.loadSource();
+    // this.getTypeIdService.getTypeId(this.typeid);
   }
+
   public loadSource (){
-    this.studyAbroadService.getstudyAbroaddata().subscribe(
+    this.studyAbroadService.getstudyAbroaddata(this.typeid).subscribe(
           res=>{
             this.num = res["num"];
             this.content = res["content"];
@@ -36,8 +43,8 @@ export class listComponent implements OnInit{
           () => {}
         );
   }
-  public go(id){
-    // this.router.navigate(['studyAbroad/example/detail'],{queryParams:id})
+  public go(docid){
+    this.router.navigate(['studyAbroad/detail', { typeid: this.typeid,docid }]);
   }
 
 //********************** */
