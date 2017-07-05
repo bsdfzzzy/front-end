@@ -1,14 +1,12 @@
 import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Input, Output } from '@angular/core';
-import { studyAbroadService } from "../service/studyAbroad.service";
-import { getTypeIdService } from "../service/getTypeId.service";
+import { rankingService } from "../service/ranking.service";
 @Component({
   selector: 'list-root',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css'],
   providers:[
-    studyAbroadService,
-    getTypeIdService
+    rankingService
   ]
 })
 export class listComponent implements OnInit{
@@ -18,26 +16,23 @@ export class listComponent implements OnInit{
   @Input()
   typeid:number;
   constructor(
-    public studyAbroadService:studyAbroadService,
+    public rankingService:rankingService,
     public router:Router,
-    public activeroute:ActivatedRoute,
-    public getTypeIdService:getTypeIdService
+    public activeroute:ActivatedRoute
   ){}
 
   ngOnInit() {
     this.loadSource();
-    // this.getTypeIdService.getTypeId(this.typeid);
   }
 
   public loadSource (){
-    this.studyAbroadService.getstudyAbroaddata(this.typeid).subscribe(
+    this.rankingService.getrankingdata(this.typeid).subscribe(
           res=>{
             this.num = res["num"];
             this.data = res["data"];
             this.totalItems = this.num;//********************** */
             this.listdata = this.data.slice(0,10);//********************** */
             this.pagenums =Math.ceil(this.totalItems / this.itemsPerPage);//********************** */
-            console.log(this.num,this.data);
           },
           error => {console.log(error)},
           () => {}

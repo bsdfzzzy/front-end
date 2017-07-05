@@ -1,6 +1,6 @@
 <carousel></carousel>
 
-<div class="content">
+<div class="data">
   <div class="row">
     <div scroll class="col-md-6 col-md-offset-1">
       <div class="home1">
@@ -20,7 +20,7 @@
           <div class="col-md-5">
             <!--you liebiao-->
             <ul class="list">
-              <li *ngFor="let item of newscontent">
+              <li *ngFor="let item of newsdata">
                 <a (click)="godetail(item.id,item.typeid)"><p>{{item.title}}</p></a>
               </li>
             </ul>

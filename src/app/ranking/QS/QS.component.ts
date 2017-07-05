@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./QS.component.css']
 })
 export class QSComponent implements OnInit{
-
+  public typeid:number = 3; 
   
   constructor(
   ){}

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ARWU.component.css']
 })
 export class ARWUComponent implements OnInit{
-
+  public typeid:number = 4; 
   
   constructor(
   ){}

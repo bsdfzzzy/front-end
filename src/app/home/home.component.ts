@@ -16,8 +16,8 @@ import { flyIn } from "../animate/fly-in";
 })
 export class HomeComponent implements OnInit{
   num: number;
-  content:Array<object>;
-  newscontent: Array<object>;
+  data:Array<object>;
+  newsdata: Array<object>;
   typeid:number;
   
   constructor(
@@ -34,9 +34,8 @@ export class HomeComponent implements OnInit{
     this.homeService.gethomedata().subscribe(
           res=>{
             this.num = res["num"];
-            this.content = res["content"];
-            this.newscontent = this.content.slice(0,5);
-            console.log(this.num,this.content);
+            this.data = res["data"];
+            this.newsdata = this.data.slice(0,5);
           },
           error => {console.log(error)},
           () => {}

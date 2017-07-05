@@ -11,7 +11,7 @@ import { studyAbroadService } from "../service/studyAbroad.service";
 })
 export class detailComponent implements OnInit {
     selectid:number;
-    content:Array<object>;
+    data:Array<object>;
     length:number;
     typeid:number;
     constructor(
@@ -34,8 +34,8 @@ export class detailComponent implements OnInit {
     public loadSource(typeid){
       this.studyAbroadService.getstudyAbroaddata(typeid).subscribe(
           res=>{
-            this.content = res["content"];
-            this.length = this.content.length;
+            this.data = res["data"];
+            this.length = this.data.length;
             console.log(this.length,typeid);
           },
           error => {console.log(error)},

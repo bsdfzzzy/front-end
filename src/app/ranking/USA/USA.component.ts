@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./USA.component.css']
 })
 export class USAComponent implements OnInit{
-
+  public typeid:number = 1; 
   
   constructor(
   ){}

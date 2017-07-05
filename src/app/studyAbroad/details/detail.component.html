@@ -1,6 +1,6 @@
 <div>
   <div class="studyAbroadmain">
-    <div *ngFor="let item of content">
+    <div *ngFor="let item of data">
       <div style="min-height: 400px;" *ngIf="(item.id == selectid)">
         <h3>{{item.title}} </h3><br>
         <p>{{item.text}}</p>
@@ -11,7 +11,7 @@
         <div class="col-md-10">
           <p>
             <span class="go">上一篇：</span>
-            <span *ngFor="let item of content">
+            <span *ngFor="let item of data">
                         <span *ngIf="(item.id == (selectid - 1))">
                             <a class="gotitle" (click)="go(item.id)">{{item.title}}</a>
                         </span>
@@ -20,7 +20,7 @@
           </p>
           <p>
             <span class="go">下一篇：</span>
-            <span *ngFor="let item of content">
+            <span *ngFor="let item of data">
                         <span *ngIf="((item.id - 1) == selectid)">
                             <a class="gotitle" (click)="go(item.id)">{{item.title}}</a>
                         </span>

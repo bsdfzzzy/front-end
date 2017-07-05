@@ -4,7 +4,7 @@
 
       <ul id="ydsearch">
         <li *ngFor="let item of listdata">
-          <a class="godetails" (click)="go(item.id)">{{item.title}}</a>
+          <p class="godetails"><span>{{item.id}}</span>&nbsp;&nbsp;&nbsp;&nbsp;{{item.zhName}}</p>
         </li>
       </ul>
       <div id="page" class="row">

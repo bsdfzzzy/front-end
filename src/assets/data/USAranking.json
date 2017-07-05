@@ -1,0 +1,66 @@
+{
+    "typeid":1,
+    "num":12,
+    "data":[
+        {
+            "id":1,
+            "zhName":"普林斯顿大学",
+            "enName":"Princeton University"
+        },
+        {
+            "id":2,
+            "zhName":"哈佛大学",
+            "enName":"Harvard University"
+        },
+        {
+            "id":3,
+            "zhName":"耶鲁大学",
+            "enName":"Yale University"
+        },
+        {
+            "id":4,
+            "zhName":"哥伦比亚大学",
+            "enName":"Columbia University"
+        },
+        {
+            "id":5,
+            "zhName":"斯坦福大学",
+            "enName":"Stanford University"
+        },
+        {
+            "id":6,
+            "zhName":"芝加哥大学",
+            "enName":"University of Chicago"
+        },
+        {
+            "id":7,
+            "zhName":"麻省理工学院",
+            "enName":"Massachusetts Institute of Technology"
+        },
+        {
+            "id":8,
+            "zhName":"杜克大学",
+            "enName":"Duke University"
+        },
+        {
+            "id":9,
+            "zhName":"宾夕法尼亚大学",
+            "enName":"University of Pennsylvania"
+        },
+        {
+            "id":10,
+            "zhName":"加州理工学院",
+            "enName":"California Institute of Technology"
+        },
+        {
+            "id":11,
+            "zhName":"达特茅斯学院",
+            "enName":"Dartmouth College"
+        },
+        {
+            "id":12,
+            "zhName":"约翰霍普金斯大学",
+            "enName":"Johns Hopkins University"
+        }
+    ]
+}
