@@ -1,0 +1,9 @@
+<div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div *ngFor="let item of items">
+                <amap [longitude]="item.longitude" [latitude]="item.latitude" [container]="item.container" [item]="item"></amap>
+            </div>
+        </div>
+    </div>
+</div>
